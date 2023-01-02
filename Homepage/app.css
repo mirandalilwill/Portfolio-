@@ -1,0 +1,178 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: Montserrat, sans-serif;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 20px 40px;
+    width: 100%;
+    background-color: rgba(45, 51, 63, 0.4);
+}
+
+.logo a {
+    font-size: 29px;
+    font-family: Bebas Neue, sans-serif;
+    color: rgb(155, 193, 255);
+    margin-left: 140px;
+    letter-spacing: 1px;
+    border: 2px solid rgba(155, 193, 255, 0.9);
+    padding: 5px 10px 5px;
+}
+
+.right-links {
+    display: flex;
+    gap: 40px;
+    margin-right: 150px;
+}
+
+.nav-bar-links:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transform: translateY(-0.2em);
+}
+
+.nav-bar-links {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(111, 166, 254);
+    font-weight: lighter;
+    transition: ease-in-out 0.3s;
+}
+
+.writing-title {
+    display: flex;
+    flex-direction: row;
+    margin-left: 22.5%;
+    margin-top: 125px;
+}
+
+.writing-title h1 {
+    color: rgb(155, 193, 255);
+    letter-spacing: 2px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-article {
+    display: flex;
+    width: 200px;
+    height: 500px;
+    border: 1px solid rgb(251, 252, 252);
+    padding: 8px;
+    margin-left: 4%;
+    margin-top: 50px;
+    /* border-radius: 10px; */
+    color: whitesmoke;
+}
+
+.right-article {
+    display: flex;
+    width: 200px;
+    height: 500px;
+    border: 1px solid rgb(253, 254, 254);
+    padding: 8px;
+    margin-right: 4%;
+    margin-top: 50px;
+    /* border-radius: 10px; */
+    color: rgb(240, 240, 240);
+}
+
+.writing-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+    width: 70%;
+}
+
+.piece {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgb(155, 193, 255);
+    border-radius: 10px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+/* Each 'piece' should direct to a separate page with just selected pieces, complete with a side bar directing to each one */
+/* Need to overlay a link on each piece so that any part of the square can be clicked on and directed to the link */
+
+.piece-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px 10px 0 0;
+    position: absolute;
+    top: 0;
+    background: rgba(21, 38, 48, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+.piece-title a, h1 {
+    font-size: 15px;
+    padding: 5px;
+    color: rgb(239, 239, 240);
+    font-weight: 300;
+    text-decoration: none;
+    text-align: center;
+}
+
+.piece a, img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.piece:hover {
+    transform: translateY(-0.2em);
+}
+
+.piece:hover .piece-title {
+    opacity: 0;
+}
+
+.description, .description-paragraph {
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 0;
+}
+
+.description-paragraph {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:rgb(239, 239, 240);
+    background-color: rgba(21, 38, 48, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.piece:hover .description-paragraph {
+    opacity: 1;
+}
