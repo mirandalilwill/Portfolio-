@@ -38,7 +38,7 @@ body {
 .nav-bar-links:hover {
     cursor: pointer;
     color: rgb(255, 255, 255);
-    transform: translateY(-0.2em);
+    transform: translateY(-0.07em);
 }
 
 .nav-bar-links {
@@ -88,7 +88,7 @@ body {
 .mapshot-img {
     width: 450px;
     height: auto;
-    border-radius: 45%;
+    border-radius: 10%;
     transition: .5s ease-in-out;
 }
 
